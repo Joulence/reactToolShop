@@ -1,4 +1,5 @@
 import styles from "./ToolItem.module.scss";
+import ToolItemForm from "./ToolItemForm";
 
 const ToolItem = (props) => {
   const price = `$${props.price.toFixed(2)}`;
@@ -11,7 +12,7 @@ const ToolItem = (props) => {
         <div className={styles.price}>{price}</div>
       </div>
       <div>
-
+        <ToolItemForm />
       </div>
     </li>
   );
