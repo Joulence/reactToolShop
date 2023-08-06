@@ -1,4 +1,6 @@
+import Card from "../UI/Card";
 import styles from "./AvailableTools.module.scss";
+import ToolItem from "./ToolItem/ToolItem";
 
 const DUMMY_TOOLS = [
   {
@@ -55,11 +57,18 @@ const DUMMY_TOOLS = [
 const AvailableTools = () => {
   return (
     <section className={styles.tools}>
-      <ul>
-        {DUMMY_TOOLS.map((tool) => (
-          <li>{tool.name}</li>
-        ))}
-      </ul>
+      <Card>
+        <ul>
+          {DUMMY_TOOLS.map((tool) => (
+            <ToolItem
+              key={tool.id}
+              name={tool.name}
+              description={tool.description}
+              price={tool.price}
+            />
+          ))}
+        </ul>
+      </Card>
     </section>
   );
 };
