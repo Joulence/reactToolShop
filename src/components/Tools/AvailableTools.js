@@ -53,13 +53,15 @@ const DUMMY_TOOLS = [
 ];
 
 const AvailableTools = () => {
-  <section className={styles.tools}>
-    <ul>
-      {DUMMY_TOOLS.map((tool) => (
-        <li>{tool.name}</li>
-      ))}
-    </ul>
-  </section>;
+  return (
+    <section className={styles.tools}>
+      <ul>
+        {DUMMY_TOOLS.map((tool) => (
+          <li>{tool.name}</li>
+        ))}
+      </ul>
+    </section>
+  );
 };
 
 export default AvailableTools;
