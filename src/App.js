@@ -1,3 +1,5 @@
+import Header from "./components/Layout/Header";
+
 function App() {
   const DUMMY_TOOLS = [
     {
@@ -53,7 +55,9 @@ function App() {
   ];
 
   return (
-"TEST"
+    <>
+      <Header />
+    </>
   );
 }
 
