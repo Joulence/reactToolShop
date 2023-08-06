@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import styles from "./Header.module.scss";
+import HeaderCartButton from "./HeaderCartButton";
 
 const Header = (props) => {
   const imageURL = "https://cdn.wallpapersafari.com/17/80/BaPHpM.jpg";
@@ -8,7 +9,7 @@ const Header = (props) => {
     <Fragment>
       <header className={styles.header}>
         <h1>React Tools</h1>
-        <button>Cart</button>
+        <HeaderCartButton />
       </header>
       <div className={styles["main-image"]}>
         <img src={imageURL} alt="Tools background" />
