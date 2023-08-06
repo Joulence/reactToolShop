@@ -2,7 +2,7 @@ import styles from "./ToolItemForm.module.scss";
 
 const ToolItemForm = (props) => {
   return (
-    <form>
+    <form className={styles.form}>
       <input type="text" />
       <button>+ Add</button>
     </form>
