@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <Header />
-      <Tools />
+      <main>
+        <Tools />
+      </main>
     </>
   );
 }
