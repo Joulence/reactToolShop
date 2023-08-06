@@ -4,7 +4,7 @@ import Cart from "./components/Cart/Cart";
 import { useState } from "react";
 
 function App() {
-  const [cartIsShown, setCartIsShown] = useState(true);
+  const [cartIsShown, setCartIsShown] = useState(false);
 
   const showCartHandler = () => {
     setCartIsShown(true);
